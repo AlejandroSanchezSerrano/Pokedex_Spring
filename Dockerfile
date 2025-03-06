@@ -14,8 +14,10 @@ FROM eclipse-temurin:23-jre
 WORKDIR /app
 # Copy the JAR file from the builder stage
 COPY --from=builder /app/target/*.jar app.jar
+# Set the environment variable for the port
+ENV PORT 8080
 # Expose the port the app will run on
-EXPOSE 8080
+EXPOSE $PORT
 # Command to run the application
 ENTRYPOINT ["java", "-jar", "app.jar"]
 
