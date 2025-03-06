@@ -1,0 +1,110 @@
+@charset "UTF-8";
+.carta {
+  transition: all ease-in-out 200ms;
+}
+
+.carta:hover > :not(#no-mover) {
+  animation: subirBajar 200ms ease-in-out;
+}
+
+@keyframes subirBajar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tipo-acero {
+  background-color: #949494;
+  color: white;
+}
+
+.tipo-agua {
+  background-color: #56a1f7;
+  color: white;
+}
+
+.tipo-bicho {
+  background-color: #a6b91a;
+  color: white;
+}
+
+.tipo-dragón {
+  background-color: #6f35fc;
+  color: white;
+}
+
+.tipo-fuego {
+  background-color: #ee6f30;
+  color: white;
+}
+
+.tipo-fantasma {
+  background-color: #735797;
+  color: white;
+}
+
+.tipo-hielo {
+  background-color: #a0fffa;
+  color: white;
+}
+
+.tipo-lucha {
+  background-color: #9b5500;
+  color: white;
+}
+
+.tipo-planta {
+  background-color: #8dea57;
+  color: white;
+}
+
+.tipo-psíquico {
+  background-color: #f95587;
+  color: white;
+}
+
+.tipo-roca {
+  background-color: #903f21;
+  color: white;
+}
+
+.tipo-siniestro {
+  background-color: #5b597e;
+  color: white;
+}
+
+.tipo-tierra {
+  background-color: #724c1f;
+  color: white;
+}
+
+.tipo-veneno {
+  background-color: #a16ae2;
+  color: white;
+}
+
+.tipo-volador {
+  background-color: #9bb9d3;
+  color: white;
+}
+
+.tipo-eléctrico {
+  background-color: #f7d02c;
+  color: white;
+}
+
+.tipo-hada {
+  background-color: #ffabd5;
+  color: white;
+}
+
+.tipo-normal {
+  background-color: #b7b7b3;
+  color: white;
+}

@@ -1,0 +1,47 @@
+.carta {
+  transition: all ease-in-out 200ms;
+
+  &:hover > :not(#no-mover) {
+      animation: subirBajar 200ms ease-in-out;
+  }
+}
+
+@keyframes subirBajar {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+$tipo-colores: (
+  acero: #949494,
+  agua: #56a1f7,
+  bicho: #a6b91a,
+  dragón: #6f35fc,
+  fuego: #ee6f30,
+  fantasma: #735797,
+  hielo: #a0fffa,
+  lucha: #9b5500,
+  planta: #8dea57,
+  psíquico: #f95587,
+  roca: #903f21,
+  siniestro: #5b597e,
+  tierra: #724c1f,
+  veneno: #a16ae2,
+  volador: #9bb9d3,
+  eléctrico: #f7d02c,
+  hada: #ffabd5,
+  normal: #b7b7b3,
+);
+
+@each $tipo, $color in $tipo-colores {
+  .tipo-#{$tipo} {
+      background-color: $color;
+      color: white;
+  }
+}
