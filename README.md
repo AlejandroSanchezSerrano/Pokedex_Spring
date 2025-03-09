@@ -7,24 +7,35 @@ Este es un proyecto de Spring Boot desarrollado por Alejandro Sanchez Serrano y 
 https://pokedex-spring.onrender.com
 
 ## Tecnologías Utilizadas
-- **Spring Boot**: 3.4.2
-- **Java**: 21
+- **Spring Boot**
+- **Spring Security**
 - **Thymeleaf**
-- **HTML 5**
-- **SASS (Preprocesador CSS)**
-- **CSS 3**
-- **JPA (Java Persistence API)**
+- **JPA**
 - **MySQL** (para desarrollo local)
 - **PostgreSQL** (para producción)
-- **Springdoc OpenAPI**: 2.0.2
-- **Lombok**: 1.18.28
+- **Springdoc OpenAPI**
+- **Lombok**
+- **Java 21**
+- **HTML 5**
+- **CSS 3**
+- **SASS**
+- **Bootstrap 5**
 - **Docker**
+- **Render**
 
 ## Configuración del Proyecto
 ### Prerrequisitos
 - Java 21 o superior
 - Maven
 - Docker (opcional, para despliegue en contenedores)
+
+### Sistema de Usuarios
+La aplicación utiliza Spring Security para la autenticación y autorización de usuarios. La configuración de seguridad se encuentra en `SecurityConfiguration.java` y permite lo siguiente:
+
+- **Rutas protegidas**: Las rutas `/pokemon/nuevo` y `/pokemon/agregar` requieren autenticación.
+- **Inicio de sesión**: La página de inicio de sesión está disponible en `/login` y redirige a `/pokemon` después de un inicio de sesión exitoso.
+- **Cierre de sesión**: La ruta de cierre de sesión está configurada en `/logout` y redirige a `/logout-success` después de un cierre de sesión exitoso.
+- **Usuarios en memoria**: Actualmente, hay un usuario administrador definido en memoria para autenticarte y poder gestionar los datos de la página.
 
 ### Instalación
 1. Clona el repositorio:
