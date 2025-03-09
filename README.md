@@ -3,10 +3,16 @@
 ## Descripción
 Este es un proyecto de Spring Boot desarrollado por Alejandro Sanchez Serrano y Manuel Valero Cortes. La aplicación es una Pokédex que permite a los usuarios gestionar y visualizar información sobre diferentes Pokémon.
 
+## Enlace a Proyecto en Render
+https://pokedex-spring.onrender.com
+
 ## Tecnologías Utilizadas
 - **Spring Boot**: 3.4.2
 - **Java**: 21
 - **Thymeleaf**
+- **HTML 5**
+- **SASS (Preprocesador CSS)**
+- **CSS 3**
 - **JPA (Java Persistence API)**
 - **MySQL** (para desarrollo local)
 - **PostgreSQL** (para producción)
@@ -74,8 +80,8 @@ Luego, accede a `http://localhost:8080/swagger-ui.html` en tu navegador.
 ## Despliegue con Docker
 Para desplegar la aplicación en un contenedor Docker, utiliza el siguiente comando:
 ```bash
-docker build -t pokedex_spring .
-docker run -p 8080:8080 pokedex_spring
+docker-compose down
+docker-compose up -d
 ```
 
 ## Contribución
