@@ -8,6 +8,7 @@ https://pokedex-spring.onrender.com
 
 ## Tecnologías Utilizadas
 - **Spring Boot**
+- **Spring Web**
 - **Spring Security**
 - **Thymeleaf**
 - **JPA**
